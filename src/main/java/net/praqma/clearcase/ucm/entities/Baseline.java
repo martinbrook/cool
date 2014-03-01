@@ -389,7 +389,7 @@ public class Baseline extends UCMEntity implements Diffable {
 	public List<Baseline> getPostedBaselinesFor( Component component ) throws UnableToInitializeEntityException, CleartoolException {
         logger.fine( "Getting posted baselines for " + this + " and " + component );
 
-        List<Baseline> baselines = getCompositeMemberBaselines( component );
+        List<Baseline> baselines ; /*= getCompositeMemberBaselines( component );*/
 
         if( baselines.isEmpty()) {
             if( this.getComponent().equals(component) ) {
